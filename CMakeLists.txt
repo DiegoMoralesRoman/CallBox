@@ -11,8 +11,8 @@ set(CMAKE_CXX_FLAGS_DEBUG "-ggdb")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Libraries
-add_subdirectory(shared)
-include_directories(shared)
+add_subdirectory(src)
+include_directories(src)
 
 set (LINUX_FILES serial_port.hpp serial_port.cpp)
 
@@ -32,7 +32,7 @@ target_link_libraries(ProtocolV3_RX protocol -lpthread)
 target_link_libraries(Server protocol -lpthread)
 
 add_custom_target(check
-    COMMAND cppcheck --std=c++17 --enable=all --inconclusive --inline-suppr ../shared
+    COMMAND cppcheck --std=c++17 --enable=all --inconclusive --inline-suppr ../src
     DEPENDS)
 
 add_custom_target(docs

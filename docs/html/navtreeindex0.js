@@ -1,0 +1,23 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[1,0],
+"base128_8hpp_source.html":[2,0,0,0,0,0],
+"classes.html":[1,1],
+"classprotouart_1_1serial_1_1SerialBuffer.html":[1,0,0,0,0],
+"classprotouart_1_1serial_1_1Serializable.html":[1,0,0,0,1],
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[2,0,0],
+"dir_b0856f6b0d80ccb263b2f415c91f9e17.html":[2,0,0,0],
+"dir_f9df8ff928e5256cca36c2da2e714eab.html":[2,0,0,0,0],
+"files.html":[2,0],
+"index.html":[],
+"index.html":[0],
+"index.html#autotoc_md0":[0,0],
+"index.html#autotoc_md1":[0,0,0],
+"pages.html":[],
+"primitives_8hpp_source.html":[2,0,0,0,0,1],
+"protocol_8hpp_source.html":[2,0,0,1],
+"serial_8hpp_source.html":[2,0,0,0,0,2],
+"serial__buffer_8hpp_source.html":[2,0,0,0,0,3],
+"serializable_8hpp_source.html":[2,0,0,0,0,4],
+"utils_8hpp_source.html":[2,0,0,0,1]
+};
