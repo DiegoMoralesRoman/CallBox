@@ -55,6 +55,7 @@ namespace callbox::serial {
 
       String(const Underlying_t&& value) : m_value(value) {}
       String(const Underlying_t& value) : m_value(value) {}
+      String(const char* value) : m_value(value) {}
       String() : m_value("") {}
       operator Underlying_t() const { return m_value; }
 
