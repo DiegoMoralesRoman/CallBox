@@ -2,7 +2,7 @@
 
 #include <cstddef>
 
-namespace protouart::serial {
+namespace callbox::serial {
 
   ///
   /// @brief Circular buffer adapter 
@@ -17,7 +17,7 @@ namespace protouart::serial {
 
       void shift(size_t ammount);
 
-      SerialBuffer operator+(size_t ammount);
+      SerialBuffer operator+(size_t ammount) const;
       void operator+=(size_t ammount);
 
     private:

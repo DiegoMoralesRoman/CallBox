@@ -1,4 +1,4 @@
-#include "shared/protocol.hpp"
+#include "protocol.hpp"
 
 int main() {
 

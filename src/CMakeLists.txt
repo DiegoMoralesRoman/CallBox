@@ -4,6 +4,7 @@ set(HEADERS
   serial/serial_buffer
   serial/primitives
   serial/serializable
+  utils
 )
 set(SOURCES
   serial/base128

@@ -1,6 +1,6 @@
 #include "serial/serial_buffer.hpp"
 
-using namespace protouart::serial;
+using namespace callbox::serial;
 
 SerialBuffer::SerialBuffer(char *const start, const size_t len)
   : m_start(start), m_len(len) {
@@ -26,7 +26,7 @@ void SerialBuffer::shift(size_t ammount) {
   
 }
 
-SerialBuffer SerialBuffer::operator+(size_t ammount) {
+SerialBuffer SerialBuffer::operator+(size_t ammount) const {
   size_t next_pos = (m_current_pos + ammount) % m_len;
   SerialBuffer buffer(m_start, m_len, next_pos);
   return buffer;

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['serialbuffer_0',['SerialBuffer',['../classprotouart_1_1serial_1_1SerialBuffer.html',1,'protouart::serial']]],
-  ['serializable_1',['Serializable',['../classprotouart_1_1serial_1_1Serializable.html',1,'protouart::serial']]]
+  ['deserialize_0',['deserialize',['../classcallbox_1_1serial_1_1Int8.html#a93cbdf5c601b78a679dd0b26c3ed0a12',1,'callbox::serial::Int8::deserialize()'],['../classcallbox_1_1serial_1_1Serializable.html#a93dec290bd14c60ddbe15b519a7cf236',1,'callbox::serial::Serializable::deserialize()']]]
 ];

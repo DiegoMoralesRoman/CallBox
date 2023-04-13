@@ -2,7 +2,21 @@
 
 #include <stdint.h>
 
-namespace protouart::utils
+#ifdef NO_STL 
+   #ifdef ARDUINO_BUILD
+      #include <Arduino.h>
+      namespace callbox {
+         using string = String;
+      }
+   #endif
+#else
+   #include <string>
+   namespace callbox {
+      using string = std::string;
+   }
+#endif
+
+namespace callbox::utils
 {
   const bool is_little_endian();
   // Functions

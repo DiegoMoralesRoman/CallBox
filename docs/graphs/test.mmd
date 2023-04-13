@@ -1,0 +1,17 @@
+graph LR
+  idle[Idle]
+  rh[Reading Header]
+  rb[Reading Body]
+  flush[Flush input / ERR]
+
+  idle --"Bytes rcv"--> rh --"Header RCVd OK"--> rb
+  rh --"Out of range"--> flush
+  rb --"Header read"--> idle
+  rb --"Body error"--> flush
+
+  flush --"Flushed"--> rh
+
+  wack[Waiting ACK]
+
+  idle --"Data sent"--> wack --"NACK"--> wack
+  wack --"ACK"--> idle
